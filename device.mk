@@ -44,6 +44,10 @@ TARGET_SCREEN_WIDTH := 1080
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Init scripts
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc
