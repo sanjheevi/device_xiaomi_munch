@@ -60,7 +60,8 @@ PRODUCT_PACKAGES += \
 # Init scripts
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
-    init.recovery.usb.rc
+    init.recovery.usb.rc \
+    init.recovery.qcom.sh
 
 # Overlays
 PRODUCT_PACKAGES += \
