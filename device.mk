@@ -78,6 +78,10 @@ PRODUCT_PACKAGES_DEBUG += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
 
+# DT2W
+PRODUCT_PACKAGES += \
+    DT2W-Service-Munch
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd \

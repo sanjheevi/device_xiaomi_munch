@@ -32,3 +32,9 @@ on property:persist.bluetooth.a2dp_offload.disabled=*
 
 on property:ro.bluetooth.a2dp_offload.supported=*
     setprop ro.bluetooth.a2dp_offload.supported false
+
+on property:dev.bootcomplete=1
+    chmod 0666 /dev/xiaomi-touch
+
+on property:dev.bootcomplete=1 && property:persist.sys.munch.dt2w=*
+    exec /system/bin/xiaomi-touch 14 ${persist.sys.munch.dt2w}
