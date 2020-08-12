@@ -37,6 +37,7 @@
 
 #include "property_service.h"
 #include "vendor_init.h"
+#include <sys/sysinfo.h>
 
 using android::base::GetProperty;
 
@@ -49,6 +50,28 @@ void property_override(char const prop[], char const value[], bool add = true) {
     } else if (add) {
         __system_property_add(prop, strlen(prop), value, strlen(value));
     }
+}
+
+void load_dalvik_properties() {
+    struct sysinfo sys;
+
+    sysinfo(&sys);
+    if (sys.totalram < 6144ull * 1024 * 1024) {
+        // from - phone-xhdpi-6144-dalvik-heap.mk
+        property_override("dalvik.vm.heapstartsize", "16m");
+        property_override("dalvik.vm.heapgrowthlimit", "256m");
+        property_override("dalvik.vm.heapsize", "512m");
+        property_override("dalvik.vm.heapmaxfree", "32m");
+    } else {
+        // 8GB & 12GB RAM
+        property_override("dalvik.vm.heapstartsize", "32m");
+        property_override("dalvik.vm.heapgrowthlimit", "512m");
+        property_override("dalvik.vm.heapsize", "768m");
+        property_override("dalvik.vm.heapmaxfree", "64m");
+    }
+
+    property_override("dalvik.vm.heaptargetutilization", "0.5");
+    property_override("dalvik.vm.heapminfree", "8m");
 }
 
 void load_munchglobal() {
@@ -89,4 +112,5 @@ void vendor_load_properties() {
     } else {
       load_munch();
     }
+    load_dalvik_properties();
 }
