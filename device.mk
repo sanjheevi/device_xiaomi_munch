@@ -63,6 +63,13 @@ PRODUCT_PACKAGES += \
     init.recovery.usb.rc \
     init.recovery.qcom.sh
 
+# NFC
+PRODUCT_PACKAGES += \
+    NfcNci \
+    Tag \
+    SecureElement \
+    com.android.nfc_extras
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlay \
