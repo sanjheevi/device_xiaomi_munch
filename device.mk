@@ -121,3 +121,17 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
+
+
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libdisplayconfig.qti \
+    libminijail \
+    libnl \
+    libqdMetaData \
+    libwfdaac_vendor \
+    vendor.display.config@2.0
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
