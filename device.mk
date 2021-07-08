@@ -64,6 +64,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlay \
+    SettingsOverlay \
     SystemUIOverlay \
     WifiResCommon
 
