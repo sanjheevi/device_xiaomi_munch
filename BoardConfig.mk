@@ -9,6 +9,19 @@ BOARD_VENDOR := xiaomi
 DEVICE_PATH := device/xiaomi/munch
 MUNCH_PREBUILT := device/xiaomi/munch-prebuilt
 
+# A/B
+AB_OTA_UPDATER := true
+
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    odm \
+    product \
+    system \
+    system_ext \
+    vbmeta \
+    vbmeta_system
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
