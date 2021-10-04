@@ -6,6 +6,9 @@ ro.bluetooth.library_name=libbluetooth.so
 # Camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
 
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false
+
 # Display
 debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=1
