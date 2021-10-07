@@ -11,6 +11,7 @@ MUNCH_PREBUILT := device/xiaomi/munch-prebuilt
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_WITHOUT_VENDOR := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # A/B
 AB_OTA_UPDATER := true
