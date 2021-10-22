@@ -76,6 +76,7 @@ PRODUCT_PACKAGES += \
     FrameworkResOverlay \
     SettingsOverlay \
     SystemUIOverlay \
+    TelephonyOverlay \
     WifiResCommon
 
 # Partitions
