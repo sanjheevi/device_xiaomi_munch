@@ -23,7 +23,8 @@ AB_OTA_PARTITIONS += \
     system_ext \
     vbmeta \
     vbmeta_system \
-    vendor_boot
+    vendor_boot \
+    vendor
 
 # Architecture
 TARGET_ARCH := arm64
@@ -77,9 +78,10 @@ BOARD_USES_METADATA_PARTITION := true
 
 # Partitions
 BOARD_PREBUILT_ODMIMAGE := $(MUNCH_PREBUILT)/odm.img
+BOARD_PREBUILT_VENDORIMAGE := $(MUNCH_PREBUILT)/vendor.img
 
 BOARD_SUPER_PARTITION_SIZE := 9126805504
-BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_ext
+BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_ext vendor
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 9122611200
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 
