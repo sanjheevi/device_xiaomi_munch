@@ -670,4 +670,8 @@
 
     <!-- Flag indicating which package name can access the persistent data partition -->
     <string name="config_persistentDataPackageName">com.google.android.gms</string>
+
+    <!-- Whether device supports double tap to wake -->
+    <bool name="config_supportDoubleTapWake">true</bool>
+
 </resources>
