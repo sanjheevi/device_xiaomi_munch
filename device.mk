@@ -80,7 +80,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.recovery.usb.rc \
-    init.recovery.qcom.sh
+    init.recovery.qcom.sh \
+    init.munch.rc
 
 # Kernel
 PRODUCT_COPY_FILES += \
