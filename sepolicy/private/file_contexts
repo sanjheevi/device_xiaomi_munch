@@ -11,6 +11,7 @@
 /persist(/.*)?           u:object_r:persist_file:s0
 
 # HALs
+/system/bin/hw/android\.hardware\.bluetooth\.audio-service-system    u:object_r:hal_audio_sysbta_exec:s0
 /system/bin/hw/android\.hardware\.lights-service\.munch        u:object_r:hal_light_default_exec:s0
 /system/bin/hw/android\.hardware\.power-service        u:object_r:hal_power_default_exec:s0
 /system/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.munch      u:object_r:hal_vibrator_default_exec:s0
