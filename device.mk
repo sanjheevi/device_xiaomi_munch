@@ -46,7 +46,8 @@ PRODUCT_COPY_FILES += \
 
 # Fastbootd
 PRODUCT_PACKAGES += \
-    fastbootd
+    fastbootd \
+    android.hardware.fastboot@1.0-impl-mock
 
 # Init scripts
 PRODUCT_PACKAGES += \
