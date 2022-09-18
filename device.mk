@@ -60,6 +60,10 @@ PRODUCT_PACKAGES += \
 # Init scripts
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc
+    
+# Overlays
+PRODUCT_PACKAGES += \
+    WifiResCommon
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
