@@ -6,6 +6,8 @@
 
 MUNCH_PREBUILT := device/xiaomi/munch-prebuilt
 
+$(call inherit-product, vendor/xiaomi/munch/munch-vendor.mk)
+
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 

@@ -139,3 +139,6 @@ DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/device_framework_
 
 # VNDK
 BOARD_VNDK_VERSION := current
+
+# Inherit from the proprietary version
+-include vendor/xiaomi/munch/BoardConfigVendor.mk
