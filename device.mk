@@ -81,6 +81,10 @@ PRODUCT_PACKAGES += \
     init.recovery.usb.rc \
     init.recovery.qcom.sh
 
+# Kernel
+PRODUCT_COPY_FILES += \
+    $(MUNCH_PREBUILT)/kernel/dtb.img:dtb.img
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl \
