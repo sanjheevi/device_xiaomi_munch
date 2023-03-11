@@ -6,3 +6,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.secure=0 \
     ro.adb.secure=0
 endif
+
+# Priv-app permission
+PRODUCT_PRODUCT_PROPERTIES += \
+	ro.control_privapp_permissions=log
