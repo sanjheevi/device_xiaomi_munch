@@ -86,10 +86,6 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.sh \
     init.munch.rc
 
-# Kernel
-PRODUCT_COPY_FILES += \
-    $(MUNCH_PREBUILT)/kernel/dtb.img:dtb.img
-
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl \
@@ -171,11 +167,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
-
-# Vendor boot modules
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(MUNCH_PREBUILT)/modules/vendor_boot,$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/modules)
-
 
 # WiFi Display
 PRODUCT_PACKAGES += \

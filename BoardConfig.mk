@@ -63,29 +63,21 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_munch
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 3
 BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_BINARIES := kernel
+TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 loop.max_part=7 cgroup.memory=nokmem,nosocket reboot=panic_warm 
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-TARGET_COMPILE_WITH_MSM_KERNEL := true
-KERNEL_LD := LD=ld.lld
-TARGET_KERNEL_ADDITIONAL_FLAGS := DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc LLVM=1
-TARGET_KERNEL_APPEND_DTB := false
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_HEADER_ARCH := arm64
-
-TARGET_KERNEL_CONFIG := munch_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/munch
+TARGET_KERNEL_CONFIG := munch_defconfig
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := proton
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
+TARGET_KERNEL_ADDITIONAL_FLAGS := NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dt
 
-TARGET_FORCE_PREBUILT_KERNEL := true
-TARGET_PREBUILT_KERNEL := $(MUNCH_PREBUILT)/kernel/Image
-TARGET_PREBUILT_DTB := $(MUNCH_PREBUILT)/kernel/dtb.img
-BOARD_PREBUILT_DTBOIMAGE := $(MUNCH_PREBUILT)/kernel/dtbo.img
-BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
@@ -147,7 +139,6 @@ TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/properties/system_ext.prop
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # Recovery
-TARGET_HAS_GENERIC_KERNEL_HEADERS := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
