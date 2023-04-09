@@ -491,9 +491,6 @@
          is non-interactive. -->
     <bool name="config_cameraDoubleTapPowerGestureEnabled">false</bool>
 
-    <!-- If this is true, long press on power button will be available from the non-interactive state -->
-    <bool name="config_supportLongPressPowerWhenNonInteractive">false</bool>
-
     <!-- Indicate whether to allow the device to suspend when the screen is off
          due to the proximity sensor.  This resource should only be set to true
          if the sensor HAL correctly handles the proximity sensor as a wake-up source.
