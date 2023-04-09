@@ -115,9 +115,9 @@ system_ext/etc/permissions/qcrilhook.xml
 system_ext/framework/qcrilhook.jar
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 
-# SoundFX - from lemonade qssi-user-11-RKQ1.201105.002-2109102009-release-keys
-vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/31/lib/soundfx/libvolumelistener.so|b942c3aa1ffa563ec3f58d6789a0fbddae992c25
-vendor/lib64/soundfx/libvolumelistener.so:product/vendor_overlay/31/lib64/soundfx/libvolumelistener.so|e7240dbaeae2c32932c294ca3500865523c9276d
+# SoundFX - from lemonade qssi-user-12-RKQ1.211103.002-R.202204280922-release-keys--IN
+vendor/lib/soundfx/libvolumelistener.so:product/vendor_overlay/31/lib/soundfx/libvolumelistener.so|570f5717fca92a876a046b07a7ffbfc01fd89baa
+vendor/lib64/soundfx/libvolumelistener.so:product/vendor_overlay/31/lib64/soundfx/libvolumelistener.so|d552e1ba7bb260472151e6c48b0c9675f491132a
 
 # WiFi Display
 -framework/WfdCommon.jar
