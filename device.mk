@@ -79,6 +79,11 @@ PRODUCT_PACKAGES += \
     f2fs_io \
     check_f2fs
 
+# Display
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/display/qdcm_calib_data_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/qdcm_calib_data_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml
+
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
