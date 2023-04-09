@@ -1,6 +1,7 @@
 # Bluetooth
-ro.bluetooth.library_name=libbluetooth_qti.so
-persist.vendor.btstack.aac_frm_ctl.enabled=true
+persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac \
+persist.vendor.btstack.enable.splita2dp=true
+ro.bluetooth.library_name=libbluetooth.so
 
 # Camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
@@ -24,7 +25,7 @@ persist.dbg.wfc_avail_ovr=1
 persist.vendor.radio.report_codec=1
 persist.vendor.ims.disableADBLogs=1
 persist.vendor.ims.disableDebugLogs=1
-persist.vendor.ims.disableIMSLogs=1
+persist.vendor.ims.disableIMSLogs=1 
 persist.vendor.ims.disableQXDMLogs=1
 
 # Iorap
