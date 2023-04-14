@@ -121,7 +121,6 @@ $(foreach p, $(call to-upper, $(TREBLE_PARTITIONS)), \
 
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 TARGET_USERIMAGES_USE_F2FS := true
-TARGET_USERIMAGES_USE_EXT4 := true
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
