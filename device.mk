@@ -99,7 +99,8 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.recovery.usb.rc \
     init.recovery.qcom.sh \
-    init.munch.rc
+    init.munch.rc \
+    init.qcom.rc
 
 # Keylayout
 PRODUCT_COPY_FILES += \
