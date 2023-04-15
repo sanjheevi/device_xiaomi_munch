@@ -187,6 +187,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
+# Vibrator HAL
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service.munch
+
 # WiFi Display
 PRODUCT_PACKAGES += \
     libavservices_minijail \

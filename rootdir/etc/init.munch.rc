@@ -12,3 +12,10 @@ service vendor.power-qti /vendor/bin/hw/android.hardware.power-service
     group system
     disabled
     override
+
+service vibratorfeature-hal-service /vendor/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service
+    class hal
+    user system
+    group system input
+    disabled
+    override
