@@ -20,6 +20,7 @@ on post-fs
     mount none /product/vendor_overlay/31/etc/a2dp_in_audio_policy_configuration.xml /vendor/etc/a2dp_in_audio_policy_configuration.xml bind
     mount none /product/vendor_overlay/31/etc/bluetooth_audio_policy_configuration.xml /vendor/etc/bluetooth_audio_policy_configuration.xml bind
     mount none /product/vendor_overlay/31/etc/qdcm_calib_data_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml /vendor/etc/qdcm_calib_data_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml bind
+    mount none /product/vendor_overlay/31/etc/excluded-input-devices.xml /vendor/etc/excluded-input-devices.xml bind
     mount none /product/vendor_overlay/31/overlay/FrameworksResCommon.apk /vendor/overlay/FrameworksResCommon.apk bind
     mount none /product/vendor_overlay/31/overlay/FrameworksResTarget.apk /vendor/overlay/FrameworksResTarget.apk bind
     mount none /product/vendor_overlay/31/overlay/DevicesAndroidOverlay.apk /vendor/overlay/DevicesAndroidOverlay.apk bind
