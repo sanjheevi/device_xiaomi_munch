@@ -46,4 +46,8 @@
         </interface>
         <fqname>@1.0::IKeystoreExt/default</fqname>
     </hal>
+    <hal format="aidl">
+        <name>android.hardware.vibrator</name>
+        <fqname>IVibrator/default</fqname>
+    </hal>
 </manifest>
