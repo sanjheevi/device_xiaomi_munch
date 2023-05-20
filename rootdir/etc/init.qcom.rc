@@ -1,15 +1,5 @@
 on init
     write /sys/class/leds/vibrator/trigger "transient"
-
-on boot    
-    chown system system /sys/class/leds/vibrator/trigger
-    chown system system /sys/class/leds/vibrator/activate
-    chown system system /sys/class/leds/vibrator/brightness
-    chown system system /sys/class/leds/vibrator/duration
-    chown system system /sys/class/leds/vibrator/state
-    chown system system /sys/class/timed_output/vibrator/enable
-
-on post-fs
     mount none /product/vendor_overlay/31/lib/soundfx/libvolumelistener.so /vendor/lib/soundfx/libvolumelistener.so bind
     mount none /product/vendor_overlay/31/lib64/soundfx/libvolumelistener.so /vendor/lib64/soundfx/libvolumelistener.so bind
     mount none /product/vendor_overlay/31/etc/audio_policy_configuration.xml /vendor/etc/audio_policy_configuration.xml bind
@@ -25,3 +15,11 @@ on post-fs
     mount none /product/vendor_overlay/31/overlay/FrameworksResTarget.apk /vendor/overlay/FrameworksResTarget.apk bind
     mount none /product/vendor_overlay/31/overlay/DevicesAndroidOverlay.apk /vendor/overlay/DevicesAndroidOverlay.apk bind
     mount none /product/vendor_overlay/31/overlay/DevicesAndroidOverlay.apk /vendor/overlay/DevicesAndroidOverlay.apk bind
+
+on boot    
+    chown system system /sys/class/leds/vibrator/trigger
+    chown system system /sys/class/leds/vibrator/activate
+    chown system system /sys/class/leds/vibrator/brightness
+    chown system system /sys/class/leds/vibrator/duration
+    chown system system /sys/class/leds/vibrator/state
+    chown system system /sys/class/timed_output/vibrator/enable
