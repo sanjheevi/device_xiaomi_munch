@@ -636,7 +636,7 @@
          If a non-zero value is set for config_defaultPeakRefreshRate, then
          config_defaultRefreshRate may be set to 0, in which case the value set for
          config_defaultPeakRefreshRate will act as the default frame rate. -->
-    <integer name="config_defaultRefreshRate">60</integer>
+    <integer name="config_defaultRefreshRate">0</integer>
 
     <!-- The display uses different gamma curves for different refresh rates. It's hard for panel
          vendor to tune the curves to have exact same brightness for different refresh rate. So
@@ -656,10 +656,6 @@
         <item>-1</item>
         <item>20</item>
     </integer-array>
-
-    <!-- Default refresh rate in the zone defined by brightness and ambient thresholds.
-         If non-positive, then the refresh rate is unchanged even if thresholds are configured. -->
-    <integer name="config_defaultRefreshRateInZone">120</integer>
 
     <!-- ComponentName of a dream to show whenever the system would otherwise have
          gone to sleep.  When the PowerManager is asked to go to sleep, it will instead
