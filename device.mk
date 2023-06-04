@@ -161,6 +161,10 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.2
 
+# Parts
+PRODUCT_PACKAGES += \
+    XiaomiParts
+
 # Properties
 include $(LOCAL_PATH)/properties/default.mk
 
