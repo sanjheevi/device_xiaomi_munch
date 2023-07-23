@@ -144,6 +144,10 @@ PRODUCT_PACKAGES += \
     TelephonyOverlay \
     WifiResCommon
 
+# Palladium Overlays
+PRODUCT_PACKAGES += \
+    PalladiumFrameworkResOverlay
+
 # Overlays - override vendor ones
 PRODUCT_PACKAGES += \
     FrameworksResCommon \
