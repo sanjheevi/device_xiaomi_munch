@@ -73,8 +73,6 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/munch
 TARGET_KERNEL_CONFIG := munch_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := proton
-TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
 TARGET_KERNEL_ADDITIONAL_FLAGS := NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip DTC_EXT=$(shell pwd)/prebuilts/misc/$(HOST_OS)-x86/dtc/dt
 
 
