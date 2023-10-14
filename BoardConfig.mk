@@ -147,9 +147,9 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Sepolicy
-#include device/qcom/sepolicy/SEPolicy.mk
-#SELINUX_IGNORE_NEVERALLOWS := true
-#SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+include device/qcom/sepolicy/SEPolicy.mk
+SELINUX_IGNORE_NEVERALLOWS := true
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
