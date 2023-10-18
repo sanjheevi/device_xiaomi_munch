@@ -38,24 +38,7 @@ persist.vendor.ims.disableQXDMLogs=1
 ro.iorapd.enable=false
 
 # Media
-debug.media.transcoding.codec_max_operating_rate_720P=240
-debug.media.transcoding.codec_max_operating_rate_1080P=120
-debug.stagefright.ccodec=1
-media.aac_51_output_enabled=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
-media.stagefright.enable-aac=true
-media.stagefright.enable-fma2dp=true
-media.stagefright.enable-http=true
-media.stagefright.enable-player=true
-media.stagefright.enable-qcp=true
-media.stagefright.enable-scan=true
-media.stagefright.thumbnail.prefer_hw_codecs=true
-mm.enable.smoothstreaming=true
-persist.mm.enable.prefetch=true
-ro.media.recorder-max-base-layer-fps=60
-ro.media.xml_variant.codecs=_yupik_v1
-ro.media.xml_variant.codecs_performance=_yupik_v1
-vendor.mm.enable.qcom_parser=16777215
 
 # Netflix
 ro.netflix.bsp_rev=Q8250-19134-1
@@ -64,24 +47,14 @@ ro.netflix.bsp_rev=Q8250-19134-1
 ro.nfc.port=I2C
 
 # Radio
-DEVICE_PROVISIONED=1
-keyguard.no_require_sim=true
-persist.rmnet.data.enable=true
-persist.vendor.data.mode=concurrent
-persist.vendor.overlay.izat.optin=rro
-persist.vendor.radio.atfwd.start=true
-persist.vendor.radio.redir_party_num=1
-persist.vendor.radio.report_codec=1
-ril.subscription.types=NV,RUIM
-rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ro.telephony.default_network=33,33
-ro.telephony.call_ring.multiple=false
-telephony.lteOnCdmaDevice=1
+ril.subscription.types=NV,RUIM
+persist.vendor.radio.report_codec=1
 
 # SkiaGL Threaded
 debug.renderengine.backend=skiaglthreaded
 debug.hwui.renderer=skiagl
-renderthread.skia.reduceopstasksplitting=true 
+renderthread.skia.reduceopstasksplitting=true
 
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
