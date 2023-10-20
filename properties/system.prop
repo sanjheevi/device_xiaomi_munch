@@ -1,8 +1,3 @@
-# Bluetooth
-persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptive-aac-ldac \
-persist.vendor.btstack.enable.splita2dp=true
-ro.bluetooth.library_name=libbluetooth.so
-
 # Camera
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
 
