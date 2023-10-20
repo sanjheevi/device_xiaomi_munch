@@ -37,6 +37,7 @@ media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 # Netflix
 ro.netflix.bsp_rev=Q8250-19134-1
+ro.netflix.channel=004ee050-1a17-11e9-bb61-6f1da27fb55b
 
 # NFC
 ro.nfc.port=I2C
