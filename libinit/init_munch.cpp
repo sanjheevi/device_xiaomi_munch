@@ -80,7 +80,7 @@ void load_munchglobal() {
     property_override("ro.product.model", "22021211RG");
     property_override("ro.build.product", "munch");
     property_override("ro.product.device", "munch");
-    property_override("ro.build.fingerprint", "POCO/munch_global/munch:12/RKQ1.211001.001/V13.0.4.0.SLMINXM:user/release-keys");
+    property_override("ro.build.fingerprint", "Redmi/munch/munch:13/RKQ1.211001.001/V14.0.6.0.TLMINXM:user/release-keys");
 }
 
 void load_munchin() {
@@ -89,7 +89,7 @@ void load_munchin() {
     property_override("ro.product.model", "22021211RI");
     property_override("ro.build.product", "munch");
     property_override("ro.product.device", "munch");
-    property_override("ro.build.fingerprint", "POCO/munch_in/munch:12/RKQ1.211001.001/V13.0.4.0.SLMINXM:user/release-keys");
+    property_override("ro.build.fingerprint", "POCO/munch_in/munch:13/RKQ1.211001.001/V14.0.6.0.TLMINXM:user/release-keys");
 }
 
 void load_munch() {
@@ -98,7 +98,7 @@ void load_munch() {
     property_override("ro.product.model", "22021211RC");
     property_override("ro.build.product", "munch");
     property_override("ro.product.device", "munch");
-    property_override("ro.build.fingerprint", "Redmi/munch/munch:12/RKQ1.211001.001/V13.0.4.0.SLMINXM:user/release-keys");
+    property_override("ro.build.fingerprint", "Redmi/munch/munch:13/RKQ1.211001.001/V14.0.6.0.TLMINXM:user/release-keys");
 }
 
 
