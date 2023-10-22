@@ -81,7 +81,7 @@ system_ext/lib64/libdiag_system.so
 system_ext/lib64/libimscamera_jni.so
 system_ext/lib64/libimsmedia_jni.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
--system_ext/priv-app/ims/ims.apk
+-system_ext/priv-app/ims/ims.apk|4e69efe6cf59d47269fc9d914760ac05935008d1
 
 # Media
 system_ext/lib/libmmosal.so
