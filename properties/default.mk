@@ -9,4 +9,9 @@ endif
 
 # Priv-app permission
 PRODUCT_PRODUCT_PROPERTIES += \
-	ro.control_privapp_permissions=log
+	ro.control_privapp_permissions=log 
+
+# RIL
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.telephony.default_network=33,33 \
+    ril.subscription.types=NV,RUIM

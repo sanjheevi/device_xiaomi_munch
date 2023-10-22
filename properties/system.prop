@@ -43,8 +43,6 @@ ro.netflix.channel=004ee050-1a17-11e9-bb61-6f1da27fb55b
 ro.nfc.port=I2C
 
 # Radio
-ro.telephony.default_network=33,33
-ril.subscription.types=NV,RUIM
 persist.vendor.radio.report_codec=1
 
 # RIL
