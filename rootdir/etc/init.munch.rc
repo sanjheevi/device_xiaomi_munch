@@ -6,13 +6,6 @@ service vendor.light-qti /vendor/bin/hw/android.hardware.lights-service.qti
     disabled
     override
 
-service vendor.power-qti /vendor/bin/hw/android.hardware.power-service
-    class hal
-    user system
-    group system
-    disabled
-    override
-
 service vibratorfeature-hal-service /vendor/bin/hw/vendor.xiaomi.hardware.vibratorfeature.service
     class hal
     user system
