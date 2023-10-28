@@ -60,7 +60,7 @@ persist.vendor.sensors.enable.mag_filter=true
 persist.vendor.ssr.enable_ramdumps=1
 
 # Sysbta
-persist.bluetooth.system_audio_hal.enabled=1
+persist.bluetooth.system_audio_hal.enabled=true
 
 # WiFi
 ro.hardware.wlan.chip=639x
