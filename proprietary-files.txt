@@ -72,6 +72,12 @@ system_ext/lib64/libdpmtcm.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
 -system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 
+# Dolby Vision
+system/lib/libdolbyottcontrol.so
+system/lib/libdovi_omx.so
+system/lib64/libdolbyottcontrol.so
+system/lib64/libdovi_omx.so
+
 # IMS
 system_ext/lib64/lib-imsvideocodec.so
 system_ext/lib64/lib-imsvt.so
