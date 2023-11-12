@@ -13,4 +13,9 @@ type pps_socket, file_type;
 #sysfs
 type sysfs_graphics, sysfs_type, fs_type;
 type sysfs_kgsl, sysfs_type, fs_type;
+type sysfs_memory, fs_type, sysfs_type;
 type touchfeature_device, dev_type;
+type xiaomi_touch_exec, file_type, exec_type, system_file_type;
+
+type vendor_diag_device, dev_type;
+type vendor_sysfs_battery_supply, sysfs_type, fs_type;
