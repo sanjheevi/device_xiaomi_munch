@@ -1,0 +1,4 @@
+type xiaomi_touch, domain, coredomain;
+allow init xiaomi_touch_exec:file { getattr };
+init_daemon_domain(xiaomi_touch)
+allow xiaomi_touch touchfeature_device:chr_file rw_file_perms;
